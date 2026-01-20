@@ -1,0 +1,199 @@
+.media-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1000;
+}
+
+/* Position variants */
+.media-controls.position-top {
+  top: 0;
+  bottom: auto;
+  border-top: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-100%);
+}
+
+.media-controls.position-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  transform: translateX(-100%);
+}
+
+.media-controls.position-right {
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  width: 60px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  transform: translateX(100%);
+}
+
+/* Theme variants */
+.media-controls.theme-light {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.media-controls.theme-light .control-btn {
+  color: #000;
+}
+
+.media-controls.theme-light .track-title,
+.media-controls.theme-light .track-artist {
+  color: #000;
+}
+
+.media-controls.theme-auto {
+  /* Use CSS media query for system preference */
+}
+
+/* Size variants */
+.media-controls.size-small {
+  padding: 10px;
+}
+
+.media-controls.size-small .control-btn {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+}
+
+.media-controls.size-large {
+  padding: 30px;
+}
+
+.media-controls.size-large .control-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+}
+
+.media-controls.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.track-info {
+  flex: 1;
+  color: white;
+  min-width: 200px;
+}
+
+.track-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.track-artist {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.control-btn.play-pause {
+  font-size: 28px;
+}
+
+.volume-controls {
+  flex: 1;
+  max-width: 150px;
+}
+
+.volume-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.additional-controls {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .track-info {
+    text-align: center;
+    min-width: auto;
+  }
+
+  .volume-controls {
+    max-width: 200px;
+  }
+}

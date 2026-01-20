@@ -1,0 +1,58 @@
+{
+  "name": "jellyfin-plugin-milkdrop",
+  "version": "1.0.0",
+  "description": "Milkdrop Visualizer plugin for Jellyfin with advanced butterchurn integration",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "build:all": "node build.js",
+    "build:bundle": "node create-bundle.js",
+    "dev": "webpack --mode=development --watch",
+    "serve": "webpack serve --mode=development",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean && npm run type-check",
+    "analyze": "npm run build && npx webpack-bundle-analyzer dist/main.js"
+  },
+  "dependencies": {
+    "butterchurn": "^2.6.7",
+    "butterchurn-presets": "^2.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "css-loader": "^6.8.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^5.0.0",
+    "style-loader": "^3.3.0",
+    "ts-loader": "^9.4.0",
+    "typescript": "^5.1.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "jellyfin",
+    "plugin",
+    "visualizer",
+    "milkdrop",
+    "butterchurn",
+    "music",
+    "audio"
+  ],
+  "author": "luckycanucky",
+  "license": "MIT"
+}

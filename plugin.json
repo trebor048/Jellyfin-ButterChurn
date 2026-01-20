@@ -1,0 +1,16 @@
+{
+  "name": "Milkdrop Visualizer",
+  "version": "1.0.0",
+  "description": "A Milkdrop visualizer plugin for Jellyfin that displays butterchurn visualizations synced to music playback",
+  "id": "milkdrop-visualizer",
+  "author": "luckycanucky",
+  "thumbnail": "",
+  "targetAbi": "10.8.0.0",
+  "framework": "net6.0",
+  "overview": "Adds a Milkdrop visualizer tab to the Jellyfin web interface with media controls and butterchurn visualizations",
+  "owner": "luckycanucky",
+  "category": "General",
+  "features": [
+    "Web Client"
+  ]
+}
