@@ -1,0 +1,57 @@
+JELLYFIN MILKDROP VISUALIZER PLUGIN
+===================================
+
+QUICK INSTALLATION GUIDE
+========================
+
+STEP 1: Choose Installation Method
+----------------------------------
+Choose either Server Plugin (recommended) or Web Client Plugin.
+
+STEP 2: Copy Files
+------------------
+📍 SERVER PLUGIN (Recommended):
+   Copy: main.js + plugin.json
+   To: Your Jellyfin plugins directory
+
+🌐 WEB CLIENT PLUGIN (Alternative):
+   Copy: milkdrop-visualizer.js + manifest.json
+   To: Your Jellyfin web plugins directory
+   Or: Host manifest.json at a URL for installation
+
+STEP 3: Restart & Enable
+-----------------------
+1. Restart Jellyfin server completely
+2. Go to Dashboard → Plugins
+3. Find "Milkdrop Visualizer"
+4. Click Enable/Install
+
+STEP 4: Access Plugin
+--------------------
+- Look for "Milkdrop Visualizer" in sidebar under Media
+- Click it to open the visualizer
+- Start playing music for effects
+
+FEATURES
+========
+✅ Real-time animated visualizations
+✅ Audio-reactive effects
+✅ Media controls integration
+✅ Keyboard shortcuts (Space, F)
+✅ Mobile-friendly interface
+✅ Fullscreen support
+
+TROUBLESHOOTING
+===============
+❌ Plugin not showing?
+   • Verify files in correct plugins directory
+   • Restart Jellyfin server (not just web refresh)
+   • Check server logs for errors
+
+❌ Still not working?
+   • Try the other installation method
+   • Clear browser cache
+   • Check file permissions
+
+VERSION: Milkdrop Visualizer v1.0.0
+STATUS: Ready for installation!
