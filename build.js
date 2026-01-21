@@ -807,14 +807,14 @@ for (const file of requiredFiles) {
 }
 
 if (allPresent) {
-    console.log('\\n🎉 BUILD COMPLETE!');
+    console.log('🎉 BUILD COMPLETE!');
     console.log('==================');
     console.log('📦 All plugin files created successfully!');
     console.log('📂 Check dist/ folder for installation files');
     console.log('📖 Read INSTALL.txt for setup instructions');
-    console.log('\\n🚀 Ready to install in Jellyfin!');
+    console.log('🚀 Ready to install in Jellyfin!');
 } else {
-    console.log('\\n❌ Build incomplete - some files missing');
+    console.log('❌ Build incomplete - some files missing');
     process.exit(1);
 
 }
