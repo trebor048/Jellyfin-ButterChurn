@@ -12,46 +12,55 @@ STEP 2: Copy Files
 ------------------
 📍 SERVER PLUGIN (Recommended):
    Copy: main.js + plugin.json
-   To: Your Jellyfin plugins directory
+   To: Your Jellyfin plugins directory (e.g., /var/lib/jellyfin/plugins/milkdrop-visualizer/)
 
 🌐 WEB CLIENT PLUGIN (Alternative):
    Copy: milkdrop-visualizer.js + manifest.json
    To: Your Jellyfin web plugins directory
    Or: Host manifest.json at a URL for installation
 
+Note: Create a subdirectory for the plugin files if required.
+
 STEP 3: Restart & Enable
 -----------------------
 1. Restart Jellyfin server completely
 2. Go to Dashboard → Plugins
 3. Find "Milkdrop Visualizer"
-4. Click Enable/Install
+4. Click Enable/Install if necessary
 
 STEP 4: Access Plugin
 --------------------
 - Look for "Milkdrop Visualizer" in sidebar under Media
 - Click it to open the visualizer
-- Start playing music for effects
+- Start playing music in Jellyfin for visualizations to react
+- If no music is playing, it will attempt to use microphone input
 
 FEATURES
 ========
-✅ Real-time animated visualizations
-✅ Audio-reactive effects
-✅ Media controls integration
-✅ Keyboard shortcuts (Space, F)
-✅ Mobile-friendly interface
+✅ Real-time Milkdrop visualizations using butterchurn
+✅ Reacts to Jellyfin audio playback
+✅ Fallback to microphone if no playback
+✅ Change presets
+✅ Play/Pause integration with Jellyfin
 ✅ Fullscreen support
+✅ Keyboard shortcuts (Space, F, P)
+✅ Mobile-friendly interface
 
 TROUBLESHOOTING
 ===============
 ❌ Plugin not showing?
-   • Verify files in correct plugins directory
-   • Restart Jellyfin server (not just web refresh)
+   • Verify files in correct plugins directory with proper structure
+   • Restart Jellyfin server
    • Check server logs for errors
 
-❌ Still not working?
-   • Try the other installation method
-   • Clear browser cache
-   • Check file permissions
+❌ No visualization?
+   • Ensure music is playing in Jellyfin
+   • Allow microphone access if using fallback
+   • Check console for errors (F12 in browser)
+
+❌ Butterchurn not loading?
+   • Ensure internet access for unpkg.com CDNs
+   • Check network console for script load errors
 
 VERSION: Milkdrop Visualizer v1.0.0
 STATUS: Ready for installation!

@@ -1,0 +1,10 @@
+{
+  "name": "Milkdrop Visualizer",
+  "version": "1.0.0",
+  "description": "Advanced butterchurn visualizer for Jellyfin",
+  "id": "milkdrop-visualizer",
+  "author": "luckycanucky",
+  "type": "web",
+  "targetAbi": "10.8.0.0",
+  "framework": "net6.0"
+}

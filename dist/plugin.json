@@ -1,0 +1,13 @@
+{
+  "name": "Milkdrop Visualizer",
+  "description": "Professional butterchurn music visualizer for Jellyfin",
+  "version": "1.0.0",
+  "id": "milkdrop-visualizer",
+  "author": "luckycanucky",
+  "targetAbi": "10.8.0.0",
+  "framework": "net6.0",
+  "overview": "Adds a stunning Milkdrop visualizer to your Jellyfin media experience",
+  "owner": "luckycanucky",
+  "category": "Media",
+  "features": []
+}
